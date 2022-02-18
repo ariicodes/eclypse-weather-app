@@ -1,0 +1,383 @@
+/* UNIVERSAL STYLES */
+
+:root {
+    /* FONT WEIGHTS */
+    --book: 300;
+    --medium: 500;
+    --bold: 700;
+    /* COLORS */
+}
+
+* {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    color: white;
+}
+
+/* BODY */
+
+body {
+    background: rgb(4,19,83);
+    background: linear-gradient(180deg, rgba(4,19,83,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.current-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10.5%;
+    text-align: center;
+    width: 74.299vw;
+}
+
+/* LOGO */
+
+#logo {
+    width: 23.131vw;
+}
+
+/* UNIT SELECTION */
+
+.units {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.units p {
+    margin-right: 4.5%;
+    font-size: 3.505vw;
+    font-weight: var(--medium);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0 1% 0 3%;
+    cursor: pointer;
+    font: inherit;
+    background-color: rgba(98, 128, 255, 0.5);
+    width: 2.336vw;
+    height: 2.336vw;
+    border: 2px solid #6280FF;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: #de7345;
+    border-color: #de7345;
+}
+
+.units label {
+    margin-left: 1%;
+    font-size: 2.570vw;
+    font-weight: var(--book);
+}
+
+.units label:first-of-type {
+    margin-right: 2%;
+}
+
+/* LOCATION INPUT */
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: -5%;
+}
+
+.input-box {
+    box-sizing: border-box;
+    width: 45.5vw;
+    border-radius: 50px;
+    padding: 1% 10%;
+    outline: none;
+    text-align: center;
+    border: 2px solid #6280FF;
+    font-size: 2.5vw;
+    background-color: rgba(98, 128, 255, 0.5);
+}
+
+.input-box::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.5vw;
+    font-weight: var(--book);
+}
+
+/* LOCATION INPUT BUTTON */
+.input-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.input-btn img {
+    width: 4vw;
+}
+
+/* CURRENT WEATHER */
+#time-zone {
+    font-size: 2.103vw;
+    font-weight: var(--book);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 3.738vw;
+    font-weight: var(--book);
+}
+
+#temp {
+    margin: -10%;
+    font-size: 18.692vw;
+    font-weight: var(--medium);
+}
+
+#feels-like {
+    margin-bottom: 8%;
+    font-size: 2.570vw;
+    font-weight: var(--medium);
+}
+
+/* WEATHER CONDITIONS */
+.weather-conditions p {
+    margin-top: -5%;
+    font-size: 4.907vw;
+    font-weight: var(--bold);
+}
+
+.weather-conditions img {
+    width: 41.355vw;
+    margin: 0;
+}
+
+/* ADDITIONAL INFO */
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: -10% -7% 0;
+}
+
+.humidity {
+    text-align: left;
+}
+
+.clouds {
+    text-align: right;
+}
+
+.top {
+    font-size: 5.140vw;
+    font-weight: var(--medium);
+    margin-bottom: -15%;
+}
+
+.btm {
+    font-size: 3.738vw;
+    font-weight: var(--bold);
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* FORECAST SECTION */
+.forecast {
+    background-color: rgba(98, 128, 255, 0.5);
+    border-left: 2px solid #6280FF;
+    text-align: center;
+    width: 25.701vw;
+}
+
+.day {
+    margin: 15% 0;
+}
+
+.day p:first-child {
+    font-size: 2.336vw;
+}
+
+.day img {
+    width: 11.916vw;
+    margin: -5%;
+}
+
+.day p:nth-child(3) {
+    font-size: 4.673vw;
+    margin: 0;
+}
+
+.day p:last-child {
+    font-size: 3.271vw;
+    margin-top: -2.5%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* FOR TABLETS */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .input-box {
+    padding: 1% 10%;     
+    }
+}
+
+/* FOR LAPTOPS AND UP */
+
+@media screen and (min-width: 1024px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .current-info {
+        margin-top: 0;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2% 0 -1%;
+    }
+
+    #logo {
+        width: 6vw;
+    }
+
+    .units p {
+        margin-left: 20%;
+        margin-right: 1vw;
+        font-size: 1.25vw;
+    }
+
+    input[type="radio"] {
+        width: 4.25vw;
+        height: .85vw;
+    }
+
+    .units label {
+        font-size: 1vw;
+    }
+
+    .input {
+        align-items: center;
+    }
+
+    .input-box {
+        width: 55vw;
+        padding: .5% 10%;
+        margin: 0 2% 0 4%;
+        font-size: 1vw;
+    }
+
+    .input-box::placeholder {
+        font-size: 1vw;
+    }
+
+    .input-btn img {
+        width: 1.5vw;
+        margin-bottom: -5px;
+    }
+
+    .current-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #time-zone {
+        font-size: 1vw;
+    }
+
+    h1 {
+        font-size: 2.75vw;
+        margin-top: -2%;
+    }
+
+    #temp {
+        font-size: 5vw;
+        margin-top: -4%;
+    }
+
+    #feels-like {
+        font-size: 1.25vw;
+        margin-top: 8%;
+    }
+
+    .weather-conditions p {
+        font-size: 2vw;
+    }
+
+    .weather-conditions img {
+        width: 10vw;
+    }
+
+    .additional-info {
+        margin-top: -20%;
+        margin-bottom: 2.5%;
+        width: 200%;
+    }
+
+    .left-content, .rgt-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        z-index: 101;
+    }
+
+    .left-content div:first-of-type, 
+    .rgt-content div:first-of-type {
+        margin-right: 10vw;
+    }
+
+    .top {
+        font-size: 2vw;
+        margin-bottom: -25%;
+    }
+
+    .btm {
+        font-size: 1.25vw;
+    }
+
+    .forecast {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 5%;
+        width: 90%;
+        border-left: none;
+        border-top: 2px solid #6280FF;
+    }
+
+    .day {
+        margin: 1% 4.5%;
+    }
+
+    .day p:first-child {
+        font-size: 1vw;
+    }
+
+    .day img {
+        width: 5vw;
+    }
+
+    .day p:nth-child(3) {
+        font-size: 3vw;
+    }
+
+    .day p:last-child {
+        font-size: 2vw;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tmb2vzj.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Eclypse - Weather App</title>
+
+</head>
+<body>
+    <main class="main">
+        <section class="current-info">
+
+            <div class="input-section">
+                <!-- LOGO -->
+                <img src="img/logo.png" alt="gray cresent and orange circle" id="logo">
+    
+                <!-- UNIT SELECTION -->
+                <div class="units">
+                    <p>UNITS:</p>
+                    
+                    <input type="radio" name="units" id="fahrenheit" checked>
+                    <label for="fahrenheit">Fahrenheit</label>
+    
+                    <input type="radio" name="units" id="celsius">
+                    <label for="celsius">Celsius</label>
+                </div>
+    
+                <!-- LOCATION INPUT -->
+                <div class="input">
+                    <input type="text" class="input-box" placeholder="Enter Zip code or City">
+                    <button class="input-btn"><img src="img/magnifying-glass.png" alt="white magnifying glass icon"></button>
+                </div>
+            </div>
+    
+            <div class="current-weather">
+                <!-- TIME ZONE -->
+                <p id="time-zone">Time Zone: </p>
+    
+                <!-- CITY & STATE -->
+                <h1>City</h1>
+    
+                <!-- TEMPERATURE -->
+                <p id="temp">00º</p>
+                <p id="feels-like">Feels Like: 00º</p>
+    
+                <!-- WEATHER CONDITIONS AND ICON -->
+                <div class="weather-conditions">
+                    <p id="conditions">weather conditions</p>
+                    <img src="img/Image 1.png" alt="" id="current-icon">
+                </div>
+    
+    
+                <div class="additional-info">
+                    <!-- HUMIDITY AND CLOUDINESS -->
+                        <div class="humidity">
+                            <p class="top" id="humid">00%</p>
+                            <p class="btm">Humidity</p>
+                        </div>
+                        <div class="clouds">
+                            <p class="top" id="cloud">00%</p>
+                            <p class="btm">Cloudiness</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="forecast">
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+            <div class="day">
+                <p class="week-day">Day</p>
+                <img src="img/Image 1.png" alt="" class="weather-icon">
+                <p class="daily-high">00º</p>
+                <p class="daily-low">00º</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
