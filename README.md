@@ -14,3 +14,6 @@ A simple weather app with 7 day forecast and the option to choose between imperi
 - [Pure CSS Custom Styled Radio Buttons | Modern CSS Solutions](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
 - [PX to percentage converter (instantly and bidirectional)](https://nekocalc.com/px-to-percentage-converter)
 - [JavaScript Date getDay() Method](https://www.w3schools.com/jsref/jsref_getday.asp)
+
+## Link to LIVE APP
+![Eclypse - Weather App](https://ariicodes.github.io/eclypse-weather-app/)
